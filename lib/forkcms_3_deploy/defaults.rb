@@ -19,4 +19,8 @@ configuration.load do
 
 	# your computer must be running ssh-agent for the git checkout to work from the server to the git server
 	set :ssh_options, { :forward_agent => true }
+	
+  # set version control type and copy strategy
+  set :scm, :git
+  set :copy_strategy, :checkout
 end
