@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "forkcms_3_deploy"
-  s.version = "1.1.0"
+  s.version = "1.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tijs Verkoyen", "Sam Tubbax"]
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "forkcms_3_deploy.gemspec",
     "lib/forkcms_3_deploy.rb",
     "lib/forkcms_3_deploy/defaults.rb",
     "lib/forkcms_3_deploy/forkcms.rb",
