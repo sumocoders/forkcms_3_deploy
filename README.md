@@ -24,7 +24,7 @@ This recipe will deploy the ForkCMS-instance to your-app.com.
 	set :deploy_to, "/home/#{user}/apps/#{application}"				# eg.: /home/sumocoders/apps/sumocoders.be
 
 	# set document_root
-	set :document_root, "/home/#{user}/www.your-app.com"			# eg.: /home/sumocoders/default_www
+	set :document_root, "/home/#{user}/www.your-app.com"			# eg.: /home/sumocoders/www.sumocoderS.be
 	
 	# define roles
 	server "your-app.com", :app, :web, :db, :primary => true		# eg.: crsolutions.be
@@ -33,10 +33,6 @@ This recipe will deploy the ForkCMS-instance to your-app.com.
 	set :repository, "git@your-git.com:your-app.git"				# eg.: git@crsolutions.be:sumocoders.be.git
 	set :branch, "master"
 
-	# set version control type and copy strategy
-	set :scm, :git
-	set :copy_strategy, :checkout
-
 	begin
 		require 'forkcms_3_deploy'
 		require 'forkcms_3_deploy/defaults'							# optional, contains best practices
@@ -44,7 +40,7 @@ This recipe will deploy the ForkCMS-instance to your-app.com.
 		$stderr.puts <<-INSTALL
 	You need the forkcms_3_deploy gem (which simplifies this Capfile) to deploy this application
 	Install the gem like this:
-		gem install forkcms_deploy
+		gem install forkcms_3_deploy
 					INSTALL
 		exit 1
 	end
