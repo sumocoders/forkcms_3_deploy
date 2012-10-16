@@ -1,3 +1,5 @@
+# !!! Do not use this gem, use the forkcms_deploy-gem, which is version-independant from now on !!!
+
 # ForkCMS Deploy gem
 This is a gem that enables you to deploy a ForkCMS 3.x.x install to your server. It was built specific for Fork CMS so your Capfile will be neat and tidy.
 
@@ -10,7 +12,7 @@ The recipe is available in the forkcms_deploy gem, which can be installed via [R
 * forkcms_3_deploy/defaults		- Best practices for each deployment.
 
 ## Example recipe
-This recipe will deploy the ForkCMS-instance to your-app.com. 
+This recipe will deploy the ForkCMS-instance to your-app.com.
 
 	load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
@@ -25,7 +27,7 @@ This recipe will deploy the ForkCMS-instance to your-app.com.
 
 	# set document_root
 	set :document_root, "/home/#{user}/www.your-app.com"			# eg.: /home/sumocoders/www.sumocoderS.be
-	
+
 	# define roles
 	server "your-app.com", :app, :web, :db, :primary => true		# eg.: crsolutions.be
 
